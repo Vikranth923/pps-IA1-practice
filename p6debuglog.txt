@@ -1,0 +1,238 @@
+ 
+ gcc -g p3original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x7c7: file p3original.c, line 22.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p3original.c:22
+22    x=input_n();
+(gdb) s
+input_n () at p3original.c:3
+3   {
+(gdb) n
+5     printf("enter the number of terms to be added");
+(gdb) n
+6     scanf("%d",&n);
+(gdb) n
+enter the number of terms to be addedn
+7     return n;
+(gdb) n
+ 
+ gcc -g p4original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x8f1: file p4original.c, line 35.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p4original.c:35
+35  {
+(gdb) n
+37    n=input_array_size();
+(gdb) s
+input_array_size () at p4original.c:3
+3   {
+(gdb) n
+5     printf("enter the size of array\n");
+(gdb) n
+enter the size of array
+6     scanf("%d",&k);
+(gdb) n
+n
+7     return k;
+(gdb) n
+8   }
+(gdb) n
+main () at p4original.c:38
+38    int a[n];
+(gdb) n
+39    array_input(n,a);
+(gdb) s
+array_input (n=0, a=0x7ffff4abcac0) at p4original.c:11
+11    printf("enter the values\n");
+(gdb) n
+enter the values
+12    for(int i=0;i<n;i++)
+(gdb) n
+16  }
+(gdb) n
+main () at p4original.c:40
+40    sum=sum_n_arrays(n,a);
+(gdb) s
+ 
+ gcc -g p5original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x86a: file p5original.c, line 28.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p5original.c:28
+28    n=input();
+(gdb) s
+input () at p5original.c:3
+3   {
+(gdb) n
+4     printf("enter the number : \n");
+(gdb) n
+enter the number : 
+6     scanf("%f",&k);
+(gdb) n
+n
+7     return k;
+(gdb) n
+8   }
+(gdb) n
+main () at p5original.c:29
+29    sqrt=my_sqrt(n);
+(gdb) s
+my_sqrt (n=0) at p5original.c:12
+12    float a=n/2;
+ 
+ gcc -g p6original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x9d7: file p6original.c, line 67.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:67
+67  {
+(gdb) n
+70      input_two_string(a,b);
+(gdb) s
+input_two_string (a=0x7ffc29af6dd0 "\001", b=0x7ffc29af6df0 "@\n\340\363\270U")
+    at p6original.c:5
+5       printf("enter the two string\n");
+(gdb) n
+enter the two string
+6       scanf("%s",a);
+(gdb) n
+n
+7       scanf("%s",b);
+(gdb) n
+n
+8   }
+(gdb) n
+main () at p6original.c:71
+71      n=str_cmp(a,b);
+(gdb) s
+str_cmp (a=0x7ffc29af6dd0 "n", b=0x7ffc29af6df0 "n") at p6original.c:12
+12      x=strlen(a);
+(gdb) n
+13      y=strlen(b);
+(gdb) n
+14      if(x>y)
+(gdb) n
+20          big=x;
+(gdb) n
+22      for(i=0; i<big; i++)
+(gdb) n
+24          if(a[i]>b[i])
+(gdb) n
+28          if(a[i]==b[i])
+(gdb) n
+22      for(i=0; i<big; i++)
+(gdb) n
+37      return 0;
+(gdb) n
+38  }
+(gdb) n
+main () at p6original.c:72
+72      output(a,b,n);
+(gdb) s
+output (a=0x7ffc29af6dd0 "n", b=0x7ffc29af6df0 "n", result=0)
+    at p6original.c:41
+41      if(result==1)
+(gdb) n
+45      if(result==0)
+(gdb) n
+47          if(strlen(a)==strlen(b))
+(gdb) n
+49              printf("both %s and %s are same\n",a,b);
+(gdb) n
+both n and n are same
+51          if(strlen(a)>strlen(b))
+(gdb) n
+56          if(strlen(a)<strlen(b))
+(gdb) n
+61      if(result==-1)
+(gdb) n
+65  }
+(gdb) n
+main () at p6original.c:73
+73      return 0;
+(gdb) n
+74  }(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 298] will be killed.
+
+Quit anyway? (y or n) y
+ 

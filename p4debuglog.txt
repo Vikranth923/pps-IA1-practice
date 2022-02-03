@@ -1,0 +1,260 @@
+ 
+ gcc -g p1final.c
+ 
+ gcc -g p1final.c
+p1final.c: In function ‘input’:
+p1final.c:5:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   scanf("%d %d",a,b);
+          ~^
+p1final.c:5:14: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘int’ [-Wformat=]
+   scanf("%d %d",a,b);
+ 
+ gcc -g p1final.c
+p1final.c: In function ‘input’:
+p1final.c:5:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+   scanf("%d %d",a,b);
+          ~^
+p1final.c:5:14: warning: format ‘%d’ expects argument of type ‘int *’, b
+ 
+ gcc -g p1final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+ 
+ gcc -g p1final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x7b1: file p1final.c, line 16.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p1final.c:16
+16  {
+(gdb) n
+18    input(&x,&y);
+(gdb) s
+ 
+ gcc -g p2final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+ 
+ gcc -g p2final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x7f6: file p2final.c, line 42.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p2final.c:42
+42    a = input();
+(gdb) s
+input () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter the number");
+(gdb) n
+6     scanf("%d",&x);
+(gdb) n
+enter the number4
+7     return x;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:43
+43    b = input();
+(gdb) s
+input () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter the number");
+(gdb) n
+6     scanf("%d",&x);
+(gdb) n
+enter the number5
+7     return x;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:44
+44    c = input();
+(gdb) s
+ 
+ gcc -g p3final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x7c7: file p3final.c, line 22.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p3final.c:22
+22    x = input_n();
+(gdb) s
+input_n () at p3final.c:3
+3   {
+(gdb) n
+5     printf("enter the number of terms to be added");
+(gdb) n
+6     scanf("%d",&x);
+ 
+ gcc -g p4final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x8f1: file p4final.c, line 35.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p4final.c:35
+35  {
+(gdb) n
+ 
+ gcc -g p4final.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x8f1: file p4final.c, line 35.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p4final.c:35
+35  {
+(gdb) n
+37    n=input_array_size();
+(gdb) s
+input_array_size () at p4final.c:3
+3   {
+(gdb) n
+5     printf("enter the size of array\n");
+(gdb) n
+enter the size of array
+6     scanf("%d",&k);
+(gdb) n
+n
+7     return k;
+(gdb) n
+8   }
+(gdb) n
+main () at p4final.c:38
+38    int a[n];
+(gdb) 
+39    array_input(n,a);
+(gdb) s
+array_input (n=0, a=0x7ffc8375d030) at p4final.c:11
+11    printf("enter the values\n");
+(gdb) n
+enter the values
+12    for(int i=0;i<n;i++)
+(gdb) n
+16  }
+(gdb) n
+main () at p4final.c:40
+40    sum=sum_n_arrays(n,a);
+(gdb) s
+sum_n_arrays (n=0, a=0x7ffc8375d030) at p4final.c:19
+19    int sum=0;
+(gdb) n
+20    for(int i=0;i<n;i++)
+(gdb) n
+24    return sum;
+(gdb) n
+25  }
+(gdb) n
+main () at p4final.c:41
+41    output(n,a,sum);
+(gdb) 
+21857=0
+42  }(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 387] will be killed.
+
+Quit anyway? (y or n) y

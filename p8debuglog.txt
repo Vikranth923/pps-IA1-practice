@@ -1,0 +1,285 @@
+ 
+ gcc -g p11original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x978: file p11original.c, line 47.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vikranth923-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p11original.c:47
+47  {
+(gdb) n
+ 
+ gcc -g p11original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x978: file p11original.c, line 47.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vikranth923-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p11original.c:47
+47  {
+(gdb) n
+50   printf("enter the number of complex numbers\n");
+(gdb) n
+enter the number of complex numbers
+51   n=get_n();
+(gdb) s
+get_n () at p11original.c:13
+13  {
+(gdb) n
+15   scanf("%d",&n);
+(gdb) n
+n
+16   return n;
+(gdb) n
+17  }
+(gdb) n
+main () at p11original.c:52
+52   struct complex c[n];
+(gdb) n
+53   printf("enter the %d complex numbers(a+ib) in the form (a b)\n",n);
+(gdb) n
+enter the 32767 complex numbers(a+ib) in the form (a b)
+54   input_n_complex(n,c);
+(gdb) s
+input_n_complex (n=32767, c=0x7fff4e592a50) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) s
+input_complex () at p11original.c:7
+7   {
+(gdb) n
+9    scanf("%d %d",&k.real,&k.imaginary);
+(gdb) n
+10   return k;
+(gdb) n
+11  }
+(gdb) n
+input_n_complex (n=32767, c=0x7fff4e592a50) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) s
+22   c[i]=input_complex();
+(gdb) n
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) n
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) n
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) n
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) n
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) s
+input_complex () at p11original.c:7
+7   {
+(gdb) n
+9    scanf("%d %d",&k.real,&k.imaginary);
+(gdb) n
+10   return k;
+(gdb) n
+11  }
+(gdb) n
+input_n_complex (n=32767, c=0x7fff4e592a50) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) f
+ 
+ gcc -g p11original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+ 
+ gcc -g p11original.c
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x978: file p11original.c, line 47.
+(gdb) r
+Starting program: /home/runner/pps-test1-Vikranth923-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p11original.c:47
+47  {
+(gdb) n
+50   printf("enter the number of complex numbers\n");
+(gdb) n
+enter the number of complex numbers
+51   n=get_n();
+(gdb) s
+get_n () at p11original.c:13
+13  {
+(gdb) n
+15   scanf("%d",&n);
+(gdb) n
+2
+16   return n;
+(gdb) n
+17  }
+(gdb) n
+main () at p11original.c:52
+52   struct complex c[n];
+(gdb) n
+53   printf("enter the %d complex numbers(a+ib) in the form (a b)\n",n);
+(gdb) n
+enter the 2 complex numbers(a+ib) in the form (a b)
+54   input_n_complex(n,c);
+(gdb) s
+input_n_complex (n=2, c=0x7ffce7269180) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) s
+input_complex () at p11original.c:7
+7   {
+(gdb) n
+9    scanf("%d %d",&k.real,&k.imaginary);
+(gdb) n
+2
+2 3
+10   return k;
+(gdb) 
+11  }
+(gdb) n
+input_n_complex (n=2, c=0x7ffce7269180) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) n
+22   c[i]=input_complex();
+(gdb) s
+input_complex () at p11original.c:7
+7   {
+(gdb) n
+9    scanf("%d %d",&k.real,&k.imaginary);
+(gdb) n
+2 3
+10   return k;
+(gdb) n
+11  }
+(gdb) n
+input_n_complex (n=2, c=0x7ffce7269180) at p11original.c:20
+20   for(int i=0;i<n;i++)
+(gdb) n
+24  }
+(gdb) n
+main () at p11original.c:55
+55   sum=add_n_complex(n,c);
+(gdb) s
+add_n_complex (n=2, c=0x7ffce7269180) at p11original.c:28
+28   k.real=0;
+(gdb) n
+29   k.imaginary=0;
+(gdb) n
+30   for(int i=0;i<n;i++)
+(gdb) n
+32   k.real=k.real+c[i].real;
+(gdb) n
+33   k.imaginary=k.imaginary+c[i].imaginary;
+(gdb) n
+30   for(int i=0;i<n;i++)
+(gdb) n
+32   k.real=k.real+c[i].real;
+(gdb) f
+#0  add_n_complex (n=2, c=0x7ffce7269180) at p11original.c:32
+32   k.real=k.real+c[i].real;
+(gdb) n
+33   k.imaginary=k.imaginary+c[i].imaginary;
+(gdb) n
+30   for(int i=0;i<n;i++)
+(gdb) n
+35   return k;
+(gdb) n
+36  }
+(gdb) n
+main () at p11original.c:56
+56   output(n,c,sum);
+(gdb) s
+output (n=2, c=0x7ffce7269180, sum=...) at p11original.c:39
+39   printf(" %d+%di\n",c[0].real,c[0].imaginary);
+(gdb) n
+ 2+2i
+40   for(int i=1;i<n;i++)
+(gdb) n
+42    printf("+%d+%di\n",c[i].real,c[i].imaginary);
+(gdb) n
++3+2i
+40   for(int i=1;i<n;i++)
+(gdb) n
+44   printf("=%d+%di\n",sum.real,sum.imaginary);
+(gdb) n
+=5+4i
+45  }
+(gdb) n
+main () at p11original.c:57
+57   return 0;
+(gdb) n
+58  }
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 158] will be killed.
+
+Quit anyway? (y or n) y
